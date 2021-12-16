@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Stopwatch</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -16,8 +18,16 @@
         <button id="startTimer">START</button>
         <button id="pauseTimer">PAUSE</button>
         <button id="resetTimer">RESET</button>
+        <button id="setAlarm" onclick="displayTimer()">ALARM</button>
       </div>
-          
+          <div class="input">
+            <label class="text-input">
+              <input id="login" type="text" placeholder="Time">
+              <span class="placeholder">00:00:00</span>
+              <span class="background"></span>
+              
+          </label>
+          </div>
   </div>
 </body>
 <script src="index.js"></script>
